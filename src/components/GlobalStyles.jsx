@@ -1,6 +1,6 @@
 import {createGlobalStyle} from 'styled-components'
-
 const GlobalStyles = createGlobalStyle`
+  
   :root {
     --v: 1;
     --nav-color:#011B3C;
@@ -22,15 +22,14 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: sans-serif;
+    font-family: Alegreya-Regular, sans-serif;
     overflow-x:hidden ;
+    position: relative;
   }
 
   ul {
     list-style: none;
   }
-
+  
 `
-
-
 export default GlobalStyles
