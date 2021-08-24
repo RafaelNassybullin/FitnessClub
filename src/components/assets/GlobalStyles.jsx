@@ -5,6 +5,9 @@ const GlobalStyles = createGlobalStyle`
     --v: 1;
     --nav-color:#011B3C;
     --button-color:#01FCAE;
+    --red:#FF2625;
+    --white:#FFFAFB;
+    --dark:#3A1212;
   }
   @media (max-width: 758px) {
     :root {
@@ -18,11 +21,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   *::selection {
-    background: pink;
+    background: #FBD15C;
   }
 
   body {
-    font-family: Alegreya-Regular, sans-serif;
+    font-family: JosefinSans-Regular, sans-serif;
     overflow-x:hidden ;
     position: relative;
     background: #FFFAFB;

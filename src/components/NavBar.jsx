@@ -41,7 +41,6 @@ function Navbar() {
 }
 
 export default Navbar
-
 //====================Styled-Components=========================>
 const Logo = styled.div`
   color: white;
