@@ -102,24 +102,24 @@ const Text = styled.div`
 const Buttons = styled.div`
   display: flex;
 
-  button {
-    width: 12.500vw;
-    height: 3.625vw;
-    border-radius: 50vw;
-    font-size: 1.375vw;
-    background: #FF2625;
-    border: 0.188vw solid #FF2625;
-    outline: none;
-    font-family: Alegreya-Regular, sans-serif;
-    color: #FFFAFB;
-    margin-right: 1.812vw;
-    cursor: pointer;
-
-    &:hover {
-      background: #FFFAFB;
-      color: #3A1212;
-    }
-  }
+  //button {
+  //  width: 12.500vw;
+  //  height: 3.625vw;
+  //  border-radius: 50vw;
+  //  font-size: 1.375vw;
+  //  background: #FF2625;
+  //  border: 0.188vw solid #FF2625;
+  //  outline: none;
+  //  font-family: Alegreya-Regular, sans-serif;
+  //  color: #FFFAFB;
+  //  margin-right: 1.812vw;
+  //  cursor: pointer;
+  //
+  //  &:hover {
+  //    background: #FFFAFB;
+  //    color: #3A1212;
+  //  }
+  //}
 
   button:last-child {
     margin: 0;

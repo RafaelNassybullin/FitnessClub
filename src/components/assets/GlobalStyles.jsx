@@ -35,6 +35,23 @@ const GlobalStyles = createGlobalStyle`
   ul {
     list-style: none;
   }
-  
+  button {
+    width: 12.500vw;
+    height: 3.625vw;
+    border-radius: 50vw;
+    font-size: 1.375vw;
+    background: #FF2625;
+    border: 0.188vw solid #FF2625;
+    outline: none;
+    font-family: Alegreya-Regular, sans-serif;
+    color: #FFFAFB;
+    margin-right: 1.812vw;
+    cursor: pointer;
+    box-shadow:  0 2.500vw 7.500vw #FFA9A975;
+    &:hover {
+      background: #FFFAFB;
+      color: #3A1212;
+    }
+  }
 `
 export default GlobalStyles

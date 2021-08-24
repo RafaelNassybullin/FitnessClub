@@ -1,19 +1,17 @@
 import React from 'react';
 import styled from 'styled-components'
-import imageItem from '../img/runonme.jpg'
+import imageItem2 from '../img/jump.jpg'
 
-const BlogPage = () => {
+const BlogPage2 = () => {
 
     return (
         <Section>
             <Wrapper>
-                <Image>
-                    <img src={imageItem} alt=""/>
-                </Image>
                 <Text>
                     <TextWrap>
-                        <h3>Health Benefits</h3>
-                        <h1>Physical Exercise Gives Your Body The Wings</h1>
+                        <h3>Improve Moods</h3>
+                        <h1>Makes You More Active
+And Improve Moods</h1>
                         <p>Physical activity and exercise can have immediate and long-term health benefits. Most
                             importantly,
                             regular activity can improve your quality of life.Exercise can improve your health and
@@ -22,13 +20,16 @@ const BlogPage = () => {
                         <button>Learn more</button>
                     </TextWrap>
                 </Text>
+                <Image>
+                    <img src={imageItem2} alt=""/>
+                </Image>
             </Wrapper>
 
         </Section>
     );
 };
 
-export default BlogPage;
+export default BlogPage2;
 //====================Styled-Components=========================>
 const Section = styled.section`
   display: flex;
@@ -45,7 +46,7 @@ const Image = styled.div`
   width: 35.375vw;
   height: 41.688vw;
   background: pink;
-  border-radius: 0 0 6.250vw 0;
+  border-radius:6.250vw 0 0 0 ;
   overflow: hidden;
 
   img {
