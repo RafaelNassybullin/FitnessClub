@@ -1,17 +1,20 @@
 import React from 'react';
 import styled from 'styled-components'
-import imageItem2 from '../img/jump.jpg'
+import imageItem2 from '../img/runonme.jpg'
+import imageItem1 from '../img/jump.jpg'
 
-const BlogPage2 = () => {
 
+function BlogPage(props) {
     return (
         <Section>
             <Wrapper>
+                 <Image {...props}>
+                    <img src={props.revert ? imageItem1 : imageItem2} alt=""/>
+                </Image>
                 <Text>
                     <TextWrap>
-                        <h3>Improve Moods</h3>
-                        <h1>Makes You More Active
-And Improve Moods</h1>
+                        <h3>{props.revert ? 'Improve Moods' : 'Health Benefits' }</h3>
+                        <h1>{props.revert ? 'Makes You More Active And Improve Moods' : 'Physical Exercise Gives Your Body The Wings' }</h1>
                         <p>Physical activity and exercise can have immediate and long-term health benefits. Most
                             importantly,
                             regular activity can improve your quality of life.Exercise can improve your health and
@@ -20,16 +23,12 @@ And Improve Moods</h1>
                         <button>Learn more</button>
                     </TextWrap>
                 </Text>
-                <Image>
-                    <img src={imageItem2} alt=""/>
-                </Image>
             </Wrapper>
-
         </Section>
     );
-};
+}
 
-export default BlogPage2;
+export default BlogPage;
 //====================Styled-Components=========================>
 const Section = styled.section`
   display: flex;
@@ -42,20 +41,24 @@ const Wrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   width: 75.813vw;
 `
-const Image = styled.div`
+export const Image = styled.div`
   width: 35.375vw;
   height: 41.688vw;
   background: pink;
-  border-radius:6.250vw 0 0 0 ;
+  border-radius:  ${props => props.revert ? '6.250vw 0 0 0' : '0 0 6.250vw 0'};
   overflow: hidden;
+  order: ${props => props.revert ? '1' : '0'};
+
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
+    transform: ${props => props.revert ? 'scale(-1,1)' : 'scale(1)'};
   }
 `
+
 const Text = styled.div`
   display: flex;
   flex-direction: column;
@@ -84,11 +87,6 @@ const Text = styled.div`
     font-weight: 500;
     margin-bottom: 2.250vw;
   }
-
-  button {
-
-  }
-
 `
 const TextWrap = styled.div`
   width: 31.375vw;

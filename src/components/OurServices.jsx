@@ -18,7 +18,7 @@ const OurServices = () => {
                                 </svg>
                             </Image>
                             <h4>Meditation Programme</h4>
-                            <a href="">Learn more</a>
+                            <a href="/">Learn more</a>
                         </SliderWrapper>
                     </Slide>
                     <Slide>
@@ -30,7 +30,7 @@ const OurServices = () => {
                                 </svg>
                             </Image>
                             <h4>Muscle Building</h4>
-                            <a href="">Learn more</a>
+                            <a href="/">Learn more</a>
                         </SliderWrapper>
                     </Slide>
                     <Slide>
@@ -42,7 +42,7 @@ const OurServices = () => {
                                 </svg>
                             </Image>
                             <h4>Cardio Programme</h4>
-                            <a href="">Learn more</a>
+                            <a href="/">Learn more</a>
                         </SliderWrapper>
                     </Slide>
                     <Slide>
@@ -60,7 +60,7 @@ const OurServices = () => {
                                 </svg>
                             </Image>
                             <h4>Nutrition Supports</h4>
-                            <a href="">Learn more</a>
+                            <a href="/">Learn more</a>
                         </SliderWrapper>
                     </Slide>
                 </Slider>
