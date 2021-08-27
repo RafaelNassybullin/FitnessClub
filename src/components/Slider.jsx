@@ -33,27 +33,70 @@ const Slider = () => {
                         slideShadows: false
                     }}
                 >
-                    <SwiperSlide className={'slide'}><Block><img src={fitoNyash} alt=""/>
-                        <div className="name"><h3>Monica Sellesa</h3><h4>Nutrition Expert</h4></div>
-                    </Block></SwiperSlide>
-                    <SwiperSlide className={'slide'}><Block><img className={'top'} src={indys} alt=""/>
-                        <div className="name"><h3>Jhonson Russoe</h3><h4>Meditation Expert</h4></div>
-                    </Block></SwiperSlide>
-                    <SwiperSlide className={'slide'}><Block><img src={indokach} alt=""/>
-                        <div className="name"><h3>Jason Holder</h3><h4>Cardio Expert</h4></div>
-                    </Block></SwiperSlide>
-                    <SwiperSlide className={'slide'}><Block><img src={fitoNyash} alt=""/>
-                        <div className="name"><h3>Monica Sellesa</h3><h4>Nutrition Expert</h4></div>
-                    </Block></SwiperSlide>
-                    <SwiperSlide className={'slide'}><Block><img src={indokach} alt=""/>
-                        <div className="name"><h3>Jason Holder</h3><h4>Cardio Expert</h4></div>
-                    </Block></SwiperSlide>
-                    <SwiperSlide className={'slide'}><Block><img className={'top'} src={indys} alt=""/>
-                        <div className="name"><h3>Jhonson Russoe</h3><h4>Meditation Expert</h4></div>
-                    </Block></SwiperSlide>
-                    <SwiperSlide className={'slide'}><Block><img src={indokach} alt=""/>
-                        <div className="name"><h3>Jason Holder</h3><h4>Cardio Expert</h4></div>
-                    </Block></SwiperSlide>
+                    <SwiperSlide className={'slide'}>
+                        <Block>
+                                <img src={fitoNyash} alt=""/>
+                            <div className="name">
+                                <h3>Monica Sellesa</h3>
+                                <h4>Nutrition Expert</h4>
+                            </div>
+                        </Block>
+                    </SwiperSlide>
+                    <SwiperSlide className={'slide'}>
+                        <Block>
+                            <img className={'top'} src={indys} alt=""/>
+                        <div className="name">
+                            <h3>Jhonson Russoe</h3>
+                            <h4>Meditation Expert</h4>
+                        </div>
+                    </Block>
+                    </SwiperSlide>
+                    <SwiperSlide className={'slide'}>
+                        <Block>
+                            <img src={indokach} alt=""/>
+                        <div className="name">
+                            <h3>Jason Holder</h3>
+                            <h4>Cardio Expert</h4>
+                        </div>
+                    </Block>
+
+                    </SwiperSlide>
+                    <SwiperSlide className={'slide'}>
+                        <Block>
+                            <img src={fitoNyash} alt=""/>
+                        <div className="name">
+                            <h3>Monica Sellesa</h3>
+                            <h4>Nutrition Expert</h4>
+                        </div>
+                    </Block>
+                    </SwiperSlide>
+                    <SwiperSlide className={'slide'}>
+                        <Block>
+                            <img src={indokach} alt=""/>
+                        <div className="name">
+                            <h3>Jason Holder</h3>
+                            <h4>Cardio Expert</h4>
+                        </div>
+                    </Block>
+                    </SwiperSlide>
+                    <SwiperSlide className={'slide'}>
+                        <Block>
+                            <img className={'top'} src={indys} alt=""/>
+                        <div className="name">
+                            <h3>Jhonson Russoe</h3>
+                            <h4>Meditation Expert</h4>
+                        </div>
+                    </Block>
+                    </SwiperSlide>
+                    <SwiperSlide className={'slide'}>
+                        <Block>
+                            <img src={indokach} alt=""/>
+                        <div className="name">
+                            <h3>Jason Holder</h3>
+                            <h4>Cardio Expert</h4>
+                        </div>
+                    </Block>
+                    </SwiperSlide>
                 </Swiper>
             </Wrapper>
         </Section>
@@ -88,12 +131,14 @@ const Wrapper = styled.div`
   .swipe {
     width: 100%;
     height: 36vw;
-    //background-color: aqua;
     display: flex;
     justify-content: space-between;
     padding: 4vw 0;
+    
   }
-
+  .swiper-container-3d {
+    perspective: 75.000vw;
+  }
   .slide {
     width: 16.625vw;
     height: 31.250vw;
