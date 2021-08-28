@@ -8,6 +8,8 @@ import BlogPage from "./BlogPage2";
 import Subscribe from "./Subscribe";
 import Slider from "./Slider";
 import Testimonials from "./Testimonials";
+import Footer from "./Footer";
+
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
             <Slider/>
             <Testimonials/>
             <Subscribe/>
+            <Footer/>
         </>
     );
 }
