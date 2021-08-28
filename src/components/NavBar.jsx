@@ -81,6 +81,8 @@ const Header = styled.header`
         text-transform: capitalize;
         cursor: pointer;
         border-bottom: 0.250vw solid transparent ;
+            font-family: Alegreya-Regular, sans-serif;
+
         &:hover{
           color: #3A1212;
           border-bottom: 0.250vw solid #FF2625 ;

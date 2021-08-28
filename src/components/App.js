@@ -18,7 +18,7 @@ function App() {
             <Fonts/>
             <Navbar/>
             <MainPage/>
-            <OurServices/>/
+            <OurServices/>
             <BlogPage/>
             <BlogPage revert/>
             <Slider/>
