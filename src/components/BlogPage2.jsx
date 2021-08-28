@@ -17,7 +17,6 @@ function BlogPage(props) {
             <Wrapper>
                 <Image {...props}>
                     <img src={props.revert ? imageItem1 : imageItem2} alt=""/>
-
                 </Image>
                 <Text>
                     <TextWrap>
