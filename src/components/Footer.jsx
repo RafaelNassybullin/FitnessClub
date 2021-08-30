@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faVk , faTwitter, faGooglePlusG, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
+
 
 const FooterComponent = () => {
     return (
@@ -7,8 +10,8 @@ const FooterComponent = () => {
             <Wrapper>
                 <LogoBlock>
                     <LogoWrap>
-                        <Logo><svg  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g >
+                        <Logo>
+                            <svg  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g >
                     <path
                         d="M38.1859 15.7237C38.3419 15.8797 38.5459 15.9573 38.7499 15.9573C38.9538 15.9573 39.1582 15.8793 39.3142 15.7237L44.8725 10.1653C46.4648 8.57266 46.4648 5.98099 44.8725 4.38834C43.2799 2.79532 40.6878 2.79605 39.0956 4.38834L38.7499 4.73331L38.4049 4.38834C36.8115 2.79568 34.2206 2.79568 32.6279 4.38834C31.8563 5.15994 31.4311 6.1857 31.4311 7.27664C31.4311 8.36758 31.8563 9.39371 32.6279 10.1649L38.1859 15.7237ZM33.7562 5.51663C34.2418 5.03104 34.879 4.78897 35.5162 4.78897C36.1534 4.78897 36.7914 5.0314 37.2766 5.51663L38.1859 6.4263C38.3357 6.57571 38.5385 6.65994 38.7499 6.65994C38.9615 6.65994 39.1644 6.57571 39.3142 6.4263L40.2239 5.51663C41.195 4.54507 42.7738 4.54617 43.7442 5.51663C44.7147 6.48709 44.7147 8.06656 43.7442 9.03702L38.7499 14.031L33.7562 9.03702C33.286 8.5668 33.0267 7.94131 33.0267 7.27701C33.0271 6.61197 33.286 5.98648 33.7562 5.51663Z"
                         fill="#FF2625"/>
@@ -27,21 +30,16 @@ const FooterComponent = () => {
                         <rect width="48" height="48" fill="white"/>
                     </clipPath>
                 </defs>
-            </svg></Logo>
+            </svg>
+                        </Logo>
                         Golds Gym
                     </LogoWrap>
                     <p>A Modified Fitness Club that provide fitness & nutrition related services to improve your health</p>
                     <Icons>
-                        <i><svg  viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.64844 10.8906L10.1335 7.70269H7.04963V5.62364C7.04963 4.72272 7.46544 3.8911 8.85147 3.8911H10.2722V1.15369C10.2722 1.15369 8.99007 0.911133 7.77729 0.911133C5.24778 0.911133 3.58455 2.47042 3.58455 5.24248V7.70269H0.743179V10.8906H3.58455V18.6523H7.04963V10.8906H9.64844Z" fill="#FF2625"/>
-</svg></i>
-                        <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></i>
-                        <i><svg  viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.9487 6.16291H7.64226V8.44986H11.4192C11.2806 9.42009 10.2757 11.3259 7.64226 11.3259C5.38996 11.3259 3.51881 9.45474 3.51881 7.09848C3.51881 4.77688 5.38996 2.90573 7.64226 2.90573C8.95899 2.90573 9.82526 3.46015 10.3104 3.94526L12.1122 2.21272C10.9341 1.10389 9.4441 0.445526 7.64226 0.445526C3.96927 0.445526 0.989304 3.4255 0.989304 7.09848C0.989304 10.8061 3.96927 13.7514 7.64226 13.7514C11.4885 13.7514 14.0527 11.0833 14.0527 7.27174C14.0527 6.82128 13.9834 6.50942 13.9487 6.16291ZM20.3591 6.37081V4.46502H18.4187V6.37081H16.4782V8.31126H18.4187V10.2517H20.3591V8.31126H22.2996V6.37081H20.3591Z" />
-</svg></i>
-                        <i><svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.28393 15.6673V5.30666H1.0614V15.6673H4.28393ZM2.65534 3.92063C3.69486 3.92063 4.52648 3.05436 4.52648 2.01484C4.52648 1.00996 3.69486 0.178345 2.65534 0.178345C1.65047 0.178345 0.818848 1.00996 0.818848 2.01484C0.818848 3.05436 1.65047 3.92063 2.65534 3.92063ZM16.3078 15.6673H16.3424V9.98452C16.3424 7.21246 15.7187 5.06411 12.4615 5.06411C10.9022 5.06411 9.86271 5.93038 9.41225 6.72735H9.3776V5.30666H6.29368V15.6673H9.5162V10.5389C9.5162 9.18756 9.75876 7.90548 11.422 7.90548C13.0852 7.90548 13.1199 9.43011 13.1199 10.6429V15.6673H16.3078Z" fill="#FF2625"/>
-</svg></i>
+                        <div> <FontAwesomeIcon icon={faVk} /> </div>
+                        <div> <FontAwesomeIcon icon={faTwitter} /> </div>
+                        <div> <FontAwesomeIcon icon={faGooglePlusG} /> </div>
+                        <div> <FontAwesomeIcon icon={faLinkedinIn} /> </div>
                     </Icons>
                 </LogoBlock>
                 <Resources>
@@ -93,7 +91,6 @@ const Footer = styled.footer`
 `
 const Wrapper = styled.div`
   width: 73.125vw;
-  //background: pink;
   display: flex;
 `
 const LogoBlock = styled.div`
@@ -104,11 +101,9 @@ const LogoBlock = styled.div`
     margin-bottom: 1.625vw;
   }
 `
-
 const Icons = styled.div`
   display: flex;
-
-  i {
+  div {
     width: 2.794vw;
     height: 2.794vw;
     background: #fff;
@@ -117,18 +112,15 @@ const Icons = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 300ms background-color ease-in-out;
-
-    svg:hover   {
+    transition: 300ms ease-in-out;
+    transition-property: background-color, color;
+    font-size: 1.106vw;
+    color: #000000;
+    cursor: pointer;
+    &:hover {
       background: var(--red);
-      fill: white;
+      color: white;
     }
-
-    svg {
-      height: 1.094vw;
-      fill: #1f18ec;
-    }
-
   }
 `
 const LogoWrap = styled.div`
@@ -167,10 +159,6 @@ const About = styled.div`
 `
 const HelpfulLinks = styled.div`
   width: 9.250vw;
-  
-  h2{
-    
-  }
   p{
     margin-bottom: 1.500vw;
   }

@@ -8,6 +8,8 @@ const GlobalStyles = createGlobalStyle`
     --red:#FF2625;
     --white:#FFFAFB;
     --dark:#3A1212;
+    
+    
   }
   @media (max-width: 758px) {
     :root {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { faLongArrowAltRight, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/swiper-bundle.min.css'
@@ -6,12 +7,12 @@ import SwiperCore, {EffectCoverflow, Pagination, Navigation} from 'swiper';
 import fitoNyash from '../img/fito-nyash.jpg'
 import indokach from '../img/indokach.jpg'
 import indys from '../img/indys.jpg'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 const Slider = () => {
-
     return (
         <Section>
             <h5>Our Instructors</h5>
@@ -19,7 +20,10 @@ const Slider = () => {
             <Wrapper>
                 <Swiper
                     className={'swipe'}
-                    navigation={true}
+                    navigation={{
+                        prevEl: '.prev1',
+                        nextEl: '.next1',
+                    }}
                     effect={"coverflow"}
                     centeredSlidesBounds={true}
                     slidesPerView={3}
@@ -98,6 +102,11 @@ const Slider = () => {
                         </Block>
                     </SwiperSlide>
                 </Swiper>
+                <Navigations>
+                    <div className={"prev1"}><FontAwesomeIcon icon={faLongArrowAltLeft} /></div>
+                    <div className={"next1"}><FontAwesomeIcon icon={faLongArrowAltRight} /></div>
+                </Navigations>
+
             </Wrapper>
             <DecorBlock>
                 <div>{}</div>
@@ -236,29 +245,51 @@ const Wrapper = styled.div`
     margin: 0;
 
   }
+
   .swiper-button-next:after, .swiper-button-prev:after {
-    font-family: swiper-icons;
     font-size: var(--swiper-navigation-size);
-    text-transform: none!important;
     letter-spacing: 0;
     text-transform: none;
-    
     font-variant: initial;
     line-height: 1;
-}
+  }
+
   .swiper-button-next, .swiper-button-prev {
     position: absolute;
     top: 50%;
-    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
     height: var(--swiper-navigation-size);
-    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
     z-index: 10;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FCD15D;
-}
+  }
+`
+const Navigations = styled.div`
+  font-size: 3vw;
+  display: flex;
+  position: absolute;
+  right: 21.875vw;
+  z-index: 80;
+  bottom: 6.9vw;
+width: 8vw;
+  justify-content: space-between;
+  .next1, .prev1 {
+   
+    user-select: none;
+    cursor: pointer;
+    color: var(--dark);
+    display: grid;
+    place-items: center;
+
+    &:hover {
+      transform: scale(1.6);
+      color: var(--red);
+    }
+  }
 `
 const Block = styled.div`
   width: 17.625vw;

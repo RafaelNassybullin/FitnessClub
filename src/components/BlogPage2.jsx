@@ -2,13 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import imageItem2 from '../img/runonme.jpg'
 import imageItem1 from '../img/jump.jpg'
-import Dots from "./assets/IconComponents/Dots";
-import NavelIcon from "./assets/IconComponents/NavelIcon";
-import ArmIcon from "./assets/IconComponents/ArmIcon";
-import RopeIcon from "./assets/IconComponents/RopeIcon";
-import BallIcon from "./assets/IconComponents/BallIcon";
-import PushIcon from "./assets/IconComponents/PushIcon";
-import SquatsIcon from "./assets/IconComponents/SquatsIcon";
+import Icon from "./assets/Icon";//component with svg icon set
 
 
 function BlogPage(props) {
@@ -30,10 +24,10 @@ function BlogPage(props) {
                         <button>Learn more</button>
                     </TextWrap>
                 </Text>
-                <DotsDecor {...props}><Dots/></DotsDecor>
-                {props.revert ? <Arm> <ArmIcon/> </Arm> : <Talia> <NavelIcon/> </Talia>}
-                {props.revert ? <Push> <PushIcon/> </Push> : <Squats> <SquatsIcon/> </Squats>}
-                {props.revert ? <Ball> <BallIcon/> </Ball> : <Rope> <RopeIcon/> </Rope>}
+                <DotsDecor {...props}><Icon dots/></DotsDecor>
+                {props.revert ? <Arm> <Icon arm/> </Arm> : <Talia> <Icon navel/> </Talia>}
+                {props.revert ? <Push> <Icon pushIc/> </Push> : <Squats> <Icon squats/> </Squats>}
+                {props.revert ? <Ball> <Icon ball/> </Ball> : <Rope> <Icon rope/> </Rope>}
             </Wrapper>
             {props.revert ? "" : <DecorBlock><div>{}</div></DecorBlock>}
         </Section>
@@ -59,7 +53,6 @@ const Wrapper = styled.div`
 export const Image = styled.div`
   width: 35.375vw;
   height: 41.688vw;
-  background: pink;
   border-radius: ${props => props.revert ? '6.250vw 0 0 0' : '0 0 6.250vw 0'};
   overflow: hidden;
   order: ${props => props.revert ? '1' : '0'};
