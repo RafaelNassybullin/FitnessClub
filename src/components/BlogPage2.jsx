@@ -3,14 +3,18 @@ import styled from 'styled-components'
 import imageItem2 from '../img/runonme.jpg'
 import imageItem1 from '../img/jump.jpg'
 import Icon from "./assets/Icon";//component with svg icon set
-
+import {motion} from "framer-motion";
 
 function BlogPage(props) {
     return (
         <Section>
             <Wrapper>
-                <Image {...props}>
-                    <img src={props.revert ? imageItem1 : imageItem2} alt=""/>
+
+                <Image {...props} whileHover={{scale: 1.1}}>
+                    <div className="wrapper">
+                        <img src={props.revert ? imageItem1 : imageItem2} alt=""/>
+                    </div>
+                    <DotsDecor {...props}><Icon dots/></DotsDecor>
                 </Image>
                 <Text>
                     <TextWrap>
@@ -24,12 +28,14 @@ function BlogPage(props) {
                         <button>Learn more</button>
                     </TextWrap>
                 </Text>
-                <DotsDecor {...props}><Icon dots/></DotsDecor>
+
                 {props.revert ? <Arm> <Icon arm/> </Arm> : <Talia> <Icon navel/> </Talia>}
                 {props.revert ? <Push> <Icon pushIc/> </Push> : <Squats> <Icon squats/> </Squats>}
                 {props.revert ? <Ball> <Icon ball/> </Ball> : <Rope> <Icon rope/> </Rope>}
             </Wrapper>
-            {props.revert ? "" : <DecorBlock><div>{}</div></DecorBlock>}
+            {props.revert ? "" : <DecorBlock>
+                <div>{}</div>
+            </DecorBlock>}
         </Section>
     );
 }
@@ -42,7 +48,6 @@ const Section = styled.section`
   justify-content: center;
   padding: 6.688vw 0;
   position: relative;
-  
 `
 const Wrapper = styled.div`
   display: grid;
@@ -50,21 +55,27 @@ const Wrapper = styled.div`
   width: 75.813vw;
   position: relative;
 `
-export const Image = styled.div`
+export const Image = styled(motion.div)`
   width: 35.375vw;
   height: 41.688vw;
-  border-radius: ${props => props.revert ? '6.250vw 0 0 0' : '0 0 6.250vw 0'};
-  overflow: hidden;
   order: ${props => props.revert ? '1' : '0'};
+  position: relative;
 
-
-  img {
+  .wrapper {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: top;
-    transform: ${props => props.revert ? 'scale(-1,1)' : 'scale(1)'};
+    border-radius: ${props => props.revert ? '6.250vw 0 0 0' : '0 0 6.250vw 0'};
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      transform: ${props => props.revert ? 'scale(-1,1)' : 'scale(1)'};
+    }
   }
+
 `
 
 const Text = styled.div`
@@ -107,7 +118,7 @@ const DotsDecor = styled.div`
   height: 8.375vw;
   top: ${props => props.revert ? 'unset' : '-2.8vw'};
   left: ${props => props.revert ? 'unset' : '-2.8vw'};
-  right: ${props => props.revert ? '-0.8vw' : 'unset'};
+  right: ${props => props.revert ? '-2.8vw' : 'unset'};
   bottom: ${props => props.revert ? '-2.8vw' : 'unset'};
 `
 const Ball = styled.div`

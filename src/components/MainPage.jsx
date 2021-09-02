@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components'
 import mainImage from '../img/gotogym.jpg'
 import Dots from "./assets/IconComponents/Dots";
+// import {motion} from "framer-motion";
 
 const MainPage = () => {
+
     return (
         <Main>
             <Wrap>

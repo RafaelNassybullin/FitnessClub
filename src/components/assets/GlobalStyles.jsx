@@ -8,8 +8,6 @@ const GlobalStyles = createGlobalStyle`
     --red:#FF2625;
     --white:#FFFAFB;
     --dark:#3A1212;
-    
-    
   }
   @media (max-width: 758px) {
     :root {
@@ -31,6 +29,7 @@ const GlobalStyles = createGlobalStyle`
     overflow-x:hidden ;
     position: relative;
     background: #FFFAFB;
+    //background: #000;
     color: #837171;
   }
 

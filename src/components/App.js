@@ -11,15 +11,13 @@ import Testimonials from "./Testimonials";
 import Footer from "./Footer";
 
 
-
-
 function App() {
 
     return (
         <>
             <GlobalStyle/>
             <Fonts/>
-            <Navbar/>
+            <Navbar />
             <MainPage/>
             <OurServices/>
             <BlogPage/>
