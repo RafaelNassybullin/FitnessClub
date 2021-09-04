@@ -79,8 +79,8 @@ const Footer = styled.footer`
   place-items: center;
   background: #FFF4F5;
   padding: 4.188vw 0 7.000vw 0;
-  @media (max-width: 758px) {
-    padding: 8.188vw 0 7.000vw 0;
+  @media (max-width: 770px) {
+    padding: 16.188vw 0 16vw 0;
   }
 
   h2 {
@@ -89,6 +89,7 @@ const Footer = styled.footer`
     color: var(--dark);
     @media(max-width: 758px){
         font-size: 9.5vw;
+      margin-bottom: 6.438vw;
     }
   }
 
@@ -97,7 +98,7 @@ const Footer = styled.footer`
     font-family: Alegreya-Regular, serif;
     line-height: 2.125vw;
     color: #504747;
-    @media(max-width: 758px){
+    @media(max-width: 770px){
         line-height: 9.125vw;
       font-size: 5.5vw;
     }
@@ -106,7 +107,7 @@ const Footer = styled.footer`
 const Wrapper = styled.div`
   width: 73.125vw;
   display: flex;
-  @media (max-width: 758px) {
+  @media (max-width: 770px) {
     width: 90.125vw;
     flex-direction: column;
   }
@@ -116,13 +117,13 @@ const LogoBlock = styled.div`
   margin-right: 10.500vw;
   @media (max-width: 758px) {
     width: 100.813vw;
-    margin: 0 0 8vw 0;
+    margin: 0 0 14vw 0;
   }
 
   p {
     width: 22vw;
     margin-bottom: 1.625vw;
-    @media (max-width: 758px) {
+    @media (max-width: 770px) {
       width: 84vw;
       margin-bottom: 4.625vw;
     }
@@ -145,11 +146,11 @@ const Icons = styled.div`
     font-size: 1.106vw;
     color: var(--red);
     cursor: pointer;
-    @media (max-width: 758px) {
-      width: 12.794vw;
-      height: 12.794vw;
-      margin-right: 5.875vw;
-      font-size: 6.106vw;
+    @media (max-width: 770px) {
+      width: 10.794vw;
+height: 10.794vw;
+margin-right: 3.875vw;
+font-size: 5.106vw;
     }
 
     &:hover {
@@ -166,26 +167,26 @@ const LogoWrap = styled.div`
   align-items: flex-end;
   margin-bottom: 2.063vw;
   color: var(--dark);
-  @media (max-width: 758px) {
-    font-size: 12.75vw;
-    margin-bottom: 3.063vw;
+  @media (max-width: 770px) {
+    font-size: 9.75vw;
+    margin-bottom: 6.063vw;
   }
 `
 const Logo = styled.div`
   margin-right: 0.875vw;
   width: 3.000vw;
   height: 3.000vw;
-  @media (max-width: 758px) {
+  @media (max-width: 770px) {
     margin-right: 3.875vw;
-    width: 16vw;
-    height: 19vw;
+    width: 12vw;
+    height: 14vw;
   }
 `
 const Resources = styled.div`
   width: 6.938vw;
   margin-right: 10.500vw;
-  @media(max-width: 758px){
-      margin: 0 0 11vw 0;
+  @media(max-width: 770px){
+      margin: 0 0 14vw 0;
     width: 89.25vw;
   }
 
@@ -199,7 +200,7 @@ const Resources = styled.div`
     border-bottom: 0.313vw solid transparent;
     transition: 300ms border-bottom-color ease-in-out;
     width: fit-content;
-    @media(max-width: 758px){
+    @media(max-width: 770px){
         margin-bottom: 3.5vw;
     }
     &:hover {
@@ -214,8 +215,9 @@ const Resources = styled.div`
 const About = styled.div`
   width: 4.625vw;
   margin-right: 10.500vw;
-  @media(max-width: 758px){
+  @media(max-width: 770px){
       width: 89.25vw;
+    margin: 0 0 14.5vw 0;
   }
   h2 {
 
@@ -227,7 +229,9 @@ const About = styled.div`
     border-bottom: 0.313vw solid transparent;
     transition: 300ms border-bottom-color ease-in-out;
     width: fit-content;
-
+    @media(max-width: 770px){
+        margin-bottom: 3.5vw;
+    }
     &:hover {
       border-bottom: 0.313vw solid red
     }
@@ -235,7 +239,7 @@ const About = styled.div`
 `
 const HelpfulLinks = styled.div`
   width: 9.250vw;
-  @media(max-width: 758px){
+  @media(max-width: 770px){
       width: 89.25vw;
   }
   p {
@@ -244,7 +248,9 @@ const HelpfulLinks = styled.div`
     border-bottom: 0.313vw solid transparent;
     transition: 300ms border-bottom-color ease-in-out;
     width: fit-content;
-
+    @media(max-width: 770px){
+        margin-bottom: 3.5vw;
+    }
     &:hover {
       border-bottom: 0.313vw solid red
     }

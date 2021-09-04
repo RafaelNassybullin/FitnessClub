@@ -54,19 +54,29 @@ const Wrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   width: 75.813vw;
   position: relative;
+  @media(max-width: 758px){
+      grid-template-columns: 1fr;
+  }
 `
 export const Image = styled(motion.div)`
   width: 35.375vw;
   height: 41.688vw;
   order: ${props => props.revert ? '1' : '0'};
   position: relative;
+  @media(max-width: 758px){
+      order: ${props => props.revert ? '-1' : '0'};
+    width: 100%;
+    height: 91.688vw;
+  }
 
   .wrapper {
     width: 100%;
     height: 100%;
     border-radius: ${props => props.revert ? '6.250vw 0 0 0' : '0 0 6.250vw 0'};
     overflow: hidden;
-
+    @media(max-width: 758px){
+        border-radius: ${props => props.revert ? '10.250vw 0 0 0' : '0 0 10.250vw 0'};
+    }
     img {
       width: 100%;
       height: 100%;
@@ -88,6 +98,10 @@ const Text = styled.div`
     font-size: 1.625vw;
     color: var(--red);
     text-transform: capitalize;
+    @media(max-width: 758px){
+        font-size: calc(1.625vw*3);
+      margin-top: 3vw;
+    }
   }
 
   h1 {
@@ -97,6 +111,9 @@ const Text = styled.div`
     font-family: JosefinSans-Bold, sans-serif;
     line-height: 130%;
     margin: 1.563vw 0;
+    @media(max-width: 758px){
+        font-size: calc(2.750vw*3);
+    }
   }
 
   p {
@@ -105,10 +122,27 @@ const Text = styled.div`
     font-size: 1.375vw;
     font-weight: 500;
     margin-bottom: 2.250vw;
+    @media(max-width: 758px){
+        font-size: calc(1.375vw*3);
+    }
   }
+  
 `
 const TextWrap = styled.div`
   width: 31.375vw;
+  @media(max-width: 758px){
+      width: 100%;
+  }
+  button{
+    
+    @media(max-width: 758px){
+        width: calc(12.500vw*3);
+    height: calc(3.625vw*3);
+    border-radius: 50vw;
+    font-size: calc(1.375vw*3);
+    }
+    
+  }
 `
 
 const DotsDecor = styled.div`
@@ -120,6 +154,14 @@ const DotsDecor = styled.div`
   left: ${props => props.revert ? 'unset' : '-2.8vw'};
   right: ${props => props.revert ? '-2.8vw' : 'unset'};
   bottom: ${props => props.revert ? '-2.8vw' : 'unset'};
+  @media(max-width: 758px){
+      width: calc(7.375vw*2);
+  height: calc(8.375vw*2);
+    top: ${props => props.revert ? 'unset' : '-5.6vw'};
+  left: ${props => props.revert ? 'unset' : '-5.6vw'};
+  right: ${props => props.revert ? '-5.6vw' : 'unset'};
+  bottom: ${props => props.revert ? '-5.6vw' : 'unset'};
+  }
 `
 const Ball = styled.div`
   position: absolute;

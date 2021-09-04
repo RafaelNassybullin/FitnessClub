@@ -62,7 +62,8 @@ const Section = styled.section`
     font-family: JosefinSans-Bold, sans-serif;
     text-align: center;
     @media(max-width:770px){
-      font-size: 9.75vw;
+      font-size: 7.75vw;
+      width: 83%;
     }
   }
 
@@ -75,8 +76,8 @@ const Section = styled.section`
     text-align: center;
     @media(max-width:770px){
       margin: 6.5vw 0 14.281vw 0;
-      font-size: 4.5vw;
-      width: 92.563vw;
+      font-size: 3.5vw;
+      width: 69.563vw;
     }
   }
 
@@ -107,8 +108,8 @@ const Section = styled.section`
       @media(max-width:770px){
         font-size: 4.5vw;
         height: 16vw;
-        width: 45.563vw;
-        margin-left: 6.5vw;
+        width: 53.563vw;
+        margin-left: 4.5vw;
       }
     }
   }

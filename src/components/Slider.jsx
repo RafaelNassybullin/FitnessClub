@@ -136,6 +136,9 @@ const Section = styled.section`
   h5 {
     font-size: 1.625vw;
     color: var(--red);
+    @media(max-width: 758px){
+        font-size: 5.5vw;
+    }
   }
 
   h1 {
@@ -146,6 +149,10 @@ const Section = styled.section`
     font-weight: bold;
     margin: 1.875vw 0 0 0;
     line-height: 130%;
+    @media(max-width: 758px){
+        font-size: 6.6vw;
+      width: 70vw;
+    }
   }
 `
 const DecorBlock = styled.div`
@@ -197,20 +204,25 @@ const Talia = styled.div`
 const Wrapper = styled.div`
   width: 65vw;
   height: 31.250vw;
-
+  @media(max-width: 758px){
+      width: 88vw;
+    height: 30.25vw;
+  }
   .swipe {
     width: 100%;
     height: 36vw;
     display: flex;
     justify-content: space-between;
     padding: 4vw 0;
-
+    @media(max-width: 758px){
+        height: 67vw;
+    }
   }
 
   .swiper-container-3d {
     perspective: 75.000vw;
     @media(max-width:770px){
-      perspective: 130vw;
+      perspective: 244vw;
     }
   }
   
@@ -252,6 +264,12 @@ const Navigations = styled.div`
   bottom: 6.9vw;
   width: 8vw;
   justify-content: space-between;
+  @media(max-width: 758px){
+      bottom: -18vw;
+    font-size: 10vw;
+    right: 37%;
+    width: 25vw;
+  }
   .next1, .prev1 {
    
     user-select: none;
@@ -278,7 +296,14 @@ const Block = styled.div`
   font-size: 2.500vw;
   overflow: hidden;
   position: relative;
-
+  @media(max-width: 758px){
+      width: 26.625vw;
+    height: 40.25vw;
+    border-radius: 3.250vw;
+    //width: 37.625vw;
+    //height: 59.25vw;
+    //border-radius: 4.25vw;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -290,7 +315,7 @@ const Block = styled.div`
     position: absolute;
     width: 100%;
     height: 8.500vw;
-    bottom: 0;
+    bottom: -2vw;
     left: 0;
     background: #fff;
     display: flex;
@@ -298,15 +323,24 @@ const Block = styled.div`
     justify-content: center;
     flex-direction: column;
     font-family: Alegreya-Regular, sans-serif;
-
+    @media(max-width: 758px){
+        height: 11.500vw;
+      padding-bottom: 2vw;
+    }
     h4 {
       font-size: 1.250vw;
+      @media(max-width: 758px){
+          font-size: 1.7vw;
+      }
     }
 
     h3 {
       font-size: 1.800vw;
       line-height: 160%;
       font-weight: 700;
+      @media(max-width: 758px){
+          font-size: 2.7vw;
+      }
     }
   }
 `

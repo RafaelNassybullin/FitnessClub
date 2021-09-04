@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled from 'styled-components'
 import mainImage from '../img/gotogym.jpg'
 import Dots from "./assets/IconComponents/Dots";
@@ -27,6 +27,7 @@ const MainPage = () => {
                 </Text>
                 <Image>
                     <img src={mainImage} alt=""/>
+                    <Filter> </Filter>
                 </Image>
                 <Exersize>Exercise</Exersize>
             </Wrap>
@@ -45,6 +46,9 @@ const Main = styled.main`
   display: flex;
   justify-content: flex-end;
   position: relative;
+  @media (max-width: 770px) {
+    height: 126vw;
+  }
 
 `
 const Wrap = styled.div`
@@ -53,6 +57,9 @@ const Wrap = styled.div`
   display: grid;
   grid-template-columns: 45% 55%;
   position: relative;
+  @media (max-width: 758px) {
+    grid-template-columns: 100%;
+  }
 `
 const Exersize = styled.div`
   font-size: 12.500vw;
@@ -62,18 +69,30 @@ const Exersize = styled.div`
   bottom: -6.250vw;
   left: 0;
   z-index: -6;
-
+  @media (max-width: 758px) {
+    font-size: 17.5vw;
+    bottom: -72.25vw;
+    left: -44px;
+  }
 `
 const Text = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 7vw;
+  @media (max-width: 758px) {
+    order: 1;
+    transform: translateY(-83vw);
+    margin-left: 7vw;
+  }
 
   h3 {
     font-size: 1.875vw;
     color: #FF2625;
     font-family: Alegreya-Regular, sans-serif;
+    @media (max-width: 758px) {
+      font-size: 4.875vw;
+    }
 
     span {
       margin-left: 1.125vw;
@@ -90,6 +109,11 @@ const Text = styled.div`
     font-family: JosefinSans-Bold, sans-serif;
     color: #3A1212;
     margin: 3.125vw 0;
+    @media (max-width: 758px) {
+      font-size: 11vw;
+      color: #3A1212;
+      text-shadow: 0 0 2vw white;
+    }
   }
 
   p {
@@ -97,12 +121,25 @@ const Text = styled.div`
     line-height: 160%;
     margin-bottom: 3.125vw;
     font-family: Alegreya-Regular, sans-serif;
-
+    @media (max-width: 758px) {
+      font-size: 4vw;
+      color: #ffffff;
+      //background-: #FBD15C;
+    }
   }
 `
 
 const Buttons = styled.div`
   display: flex;
+
+  button {
+    @media (max-width: 758px) {
+      width: 26.5vw;
+      height: 9.625vw;
+      font-size: 3.7vw;
+    }
+
+  }
 
   button:last-child {
     margin: 0;
@@ -121,6 +158,10 @@ const Image = styled.div`
   z-index: -1;
   border-radius: 0 0 0 6.688vw;
   overflow: hidden;
+  @media (max-width: 758px) {
+    border-radius: 0 0 0 18.688vw;
+    height: 124vw;
+  }
 
   img {
     position: absolute;
@@ -131,6 +172,18 @@ const Image = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -1;
+  }
+`
+const Filter = styled.div`
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  @media(max-width: 758px){
+      background: #00000012;
   }
 `
 const DecorBlock = styled.div`
@@ -144,6 +197,10 @@ const DecorBlock = styled.div`
     height: 9.894vw;
     background: #FF262512;
     border-radius: 0.313vw;
+    @media (max-width: 758px) {
+      width: 10.125vw;
+      height: 19.894vw;
+    }
 
     &:after {
       content: '';
@@ -154,6 +211,13 @@ const DecorBlock = styled.div`
       position: absolute;
       bottom: -8.313vw;
       right: -1.250vw;
+      @media (max-width: 758px) {
+        width: 9.438vw;
+        height: 17.563vw;
+        bottom: -7.313vw;
+        right: -2.25vw;
+        z-index: -2;
+      }
     }
   }
 
@@ -165,4 +229,8 @@ const DotsDecor = styled.div`
   position: absolute;
   bottom: -4vw;
   right: 1.500vw;
+  @media (max-width: 758px) {
+    width: 17.375vw;
+    bottom: 4vw;
+  }
 `
